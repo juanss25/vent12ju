@@ -4,7 +4,7 @@ import BrandFilter from "../components/BrandFilter";
 import { motion } from "framer-motion"; // Importamos framer-motion
 
 export async function getServerSideProps() {
-  const res = await fetch("http://localhost:3000/api/products");
+  const res = await fetch("https://vent12juv1.vercel.app/api/products");
   const products = await res.json();
 
 
