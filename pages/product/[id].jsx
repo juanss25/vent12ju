@@ -3,7 +3,7 @@ import { useState } from "react";
 
 
 export async function getServerSideProps({ params }) {
-  const res = await fetch(`http://localhost:3000/api/products/${params.id}`);
+  const res = await fetch(`https://vent12juv1.vercel.app/api/products/${params.id}`);
   const product = await res.json();
 
   return { props: { product } };
@@ -67,3 +67,4 @@ export default function ProductDetail({ product }) {
     </main>
   );
 }
+
